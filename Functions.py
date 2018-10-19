@@ -4,11 +4,14 @@ import cv2
 import os
 import unidecode
 
+# XML do wykrywania twarzy dla OpenCV
 face_cascade = cv2.CascadeClassifier('Resource/haarcascade_frontalface_alt.xml')
 names = []
 photos = []
 
-
+# Funkcja usuwająca akcenty z nazw plików i zamieniająca '_' na ' ' we wszystkich plikach katalogu.
+# Usuwa też rozszerzenie pliku do późniejszego wykorzystania nazwy.
+# Jako argument przyjmuje ściężkę do katalogu.
 def diacritics(path):
 
     for f in os.listdir(path):
@@ -19,7 +22,9 @@ def diacritics(path):
 
         os.rename(os.path.join(path, f), os.path.join(path, new_name))
 
-
+# Wykrycie twarzy na zdjęciu i obrysowanie ROI.
+# Docięcie zdjęcia do odpowiedniego rozmiaru i nałożenie na formatkę karty HID.
+# konwersja na RGB w celu otwarcia zdjecia przy użyciu PIL.
 def photoprep(path):
 
     for p in os.listdir(path):
@@ -40,7 +45,8 @@ def photoprep(path):
             card_rgb = cv2.cvtColor(card, cv2.COLOR_BGR2RGB)
             photos.append(card_rgb)
 
-
+# Funkcja dodająca imię i nazwisko do kartu w odpowiednim miejscu.
+# Pobiera dane z list (Powinienem zrobic slownik pewnie ale nie kumam jakos tego za bardzo :D)
 def adding_text():
     font = ImageFont.truetype('Resource/WorkSans-Medium.otf', 55)
 
