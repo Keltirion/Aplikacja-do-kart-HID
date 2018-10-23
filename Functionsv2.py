@@ -16,7 +16,7 @@ def renamefiles(path):
         file_name, file_ext = os.path.splitext(file)
         names.append(file_name.replace('_', ' '))
         file_nodiacs = (unidecode.unidecode(file_name)).replace('_', ' ')
-        os.rename(os.path.join(path, file), os.path.join(path, file_nodiacs, file_ext))
+        os.rename(os.path.join(path, file), os.path.join(path, file_nodiacs))
 
 
 def createhid(path):
