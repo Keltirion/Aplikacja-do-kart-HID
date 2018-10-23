@@ -1,11 +1,14 @@
-from Functions import *
+from Functionsv2 import *
 
 
 folder = 'C:/Users/lel.dva/Documents/Python/Aplikacja do kart HID/Photos/'
 
-diacritics(folder)
-photoprep(folder)
-adding_text()
+
+print('Wykryto {} plików.'.format(len(os.listdir(folder))))
+
+renamefiles(folder)
+
+createhid(folder)
 
 print('Done!')
 
