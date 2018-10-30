@@ -1,4 +1,4 @@
-from Functionsv2 import *
+from Functions import *
 
 
 folder = 'C:/Users/lel.dva/Documents/Python/Aplikacja do kart HID/Photos/'
