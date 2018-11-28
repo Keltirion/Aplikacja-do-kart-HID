@@ -1,0 +1,7 @@
+# PyCharm folders
+.idea
+__pycache__
+venv
+
+# CX_Freeze setup file
+Setup.py
