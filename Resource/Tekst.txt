@@ -1,0 +1,14 @@
+================================= APLIKACJA DO KART HID INSTRUKCJA =================================
+
+1. Przed uruchomieniem programu wyczyœæ foldery "Photos" i "Complete".
+
+2. Do folderu Photos wklej zdjêcia z u¿ytkownikami podpisane ich imieniem i nazwiskiem.
+
+3. Po starcie program zacznie wykrywaæ twarze na zdjêciach i wyœwietlaæ je na ekranie(nie zwracaj uwagi na rozmiar)
+Je¿eli podpisane okno zgadza sie z twarz¹ wyœwietlon¹, naciœnij "Enter" aby przejœæ dalej. 
+Je¿eli program Ÿle odszuka twarz i wyœwietli coœ b³êdnego wciœnij "Spacje" aby pomin¹æ. Aby przerwaæ generacjê naciœnij "Escape".
+
+4. Po zakoñczeniu pracy programu gotowe wzory do druku znajdziesz w folderze "Complete". Wystarczy wys³aæ je na drukarkê
+
+
+Naciœnij "Enter" aby rozpocz¹æ generacje kart....
