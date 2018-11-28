@@ -1,0 +1,7 @@
+#Pycharm files
+
+.idea
+venv
+
+# CX_Freeze file
+Setup.py
