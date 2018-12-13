@@ -1,7 +1,11 @@
-#Pycharm files
+# Pycharm files
 __pycache__
 .idea
 venv
 
 # CX_Freeze file
 Setup.py
+
+# Necessary folders
+Complete
+Photos

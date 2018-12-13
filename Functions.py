@@ -11,6 +11,11 @@ face_cascade = cv2.CascadeClassifier('Resource/haarcascade_frontalface_alt.xml')
 font = ImageFont.truetype('Resource/WorkSans-Medium.otf', 55)
 names = []
 
+
+
+
+
+
 # A function that detects the face and builds card formats.
 def createhid(path):
 # A loop passing through all files in the folder.
@@ -64,7 +69,7 @@ def createhid(path):
                                 # Drawing the name of the user on card. Name and lastname are from the list.
                                 text_card = ImageDraw.Draw(pil_card)
                                 name, lastname = str(names[0]).split(' ')
-                                # Formating the text.
+                                # Formatting the text.
                                 text_card.multiline_text(((w - 480), (h - 210)),
                                                          '{}\n{}'.format(name, lastname),
                                                          font=font,
@@ -79,7 +84,7 @@ def createhid(path):
                                 break
                             # "Space" for skip.
                             elif key == 32:
-                                print('Pomijam użytkownika: ' + str(names[0]))
+                                print('Pomijam uzytkownika: ' + str(names[0]))
                                 del names[0]
                                 # Closing all windows.
                                 cv2.destroyAllWindows()
@@ -89,5 +94,5 @@ def createhid(path):
                                 exit(0)
             # If face is not detected, error is printed and program moves along to next file.
             except AttributeError:
-                print('Błąd, nie wykryto twarzy dla: ' + str(names[0]))
+                print('Blad, nie wykryto twarzy dla: ' + str(names[0]))
                 del names[0]

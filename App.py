@@ -8,6 +8,9 @@ print(file.read())
 # Waiting for user input. "Press Enter"
 input('')
 
+
+
+
 # Information about the number of files in the "Photos" folder.
 folder = 'Photos/'
 lista = os.listdir(folder)
